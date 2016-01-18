@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/pref_category_api"
+        android:key="pref_key_storage_settings">
+        <EditTextPreference
+            android:key="pref_key_api_set"
+            android:summary="@string/pref_title_set_api"
+            android:title="@string/pref_title_set_api"
+            android:defaultValue="http://apom.hcore.pl/rozklad"/>
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/pref_category_alerts"
+        android:key="pref_key_alerts_settings">
+        <EditTextPreference
+            android:key="pref_key_alarm_alert"
+            android:inputType="number"
+            android:summary="@string/pref_summary_set_alarm_min_before"
+            android:title="@string/pref_title_set_alarm_min_before"
+            android:maxLength="2"
+            android:defaultValue="10"/>
+        <CheckBoxPreference
+            android:key="pref_key_set_ringtone"
+            android:title="@string/pref_title_set_ringtone"
+            android:summary="@string/pref_summary_set_ringtone"
+            android:defaultValue="true" />
+        <CheckBoxPreference
+            android:key="pref_key_set_vibration"
+            android:title="@string/pref_title_set_vibration"
+            android:summary="@string/pref_summary_set_vibration"
+            android:defaultValue="true" />
+        <CheckBoxPreference
+            android:key="pref_key_set_led"
+            android:title="@string/pref_title_set_led"
+            android:summary="@string/pref_summary_set_led"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/pref_category_gcm"
+        android:key="pref_key_gcm_settings">
+        <Preference android:title="@string/pref_title_set_enable_gcm"
+            android:summary="@string/pref_title_set_enable_gcm"
+            android:key="pref_key_enable_gcm"
+            android:enabled="true"/>
+        <CheckBoxPreference
+            android:key="pref_key_set_notification_from_admin"
+            android:title="@string/pref_title_set_admin_notification"
+            android:summary="@string/pref_summary_set_admin_notification"
+            android:defaultValue="false"
+            android:enabled="false"/>
+        <CheckBoxPreference
+            android:key="pref_key_set_notification_from_user"
+            android:title="@string/pref_title_set_user_notification"
+            android:summary="@string/pref_summary_set_user_notification"
+            android:defaultValue="false"
+            android:enabled="false"/>
+
+
+    </PreferenceCategory>
+</PreferenceScreen>

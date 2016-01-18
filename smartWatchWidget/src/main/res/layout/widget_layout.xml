@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/line_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/smart_watch_2_text_size_large"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/widget_not_set"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/current_stop"
+            style="@style/BaseStyle"
+            android:text="---" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/arrow"
+                style="@style/BaseStyle"
+                android:text="↓"
+                android:textSize="@dimen/smart_watch_2_text_size_small"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/last_stop"
+            style="@style/BaseStyle"
+            android:text="---"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/ic_sync_problem_white_24px"
+                android:id="@+id/departures_not_valid"/>
+
+        <TextView
+            android:id="@+id/departure"
+            style="@style/BaseStyle"
+            android:text="--:--  "
+            android:textSize="@dimen/smart_watch_2_text_size_large"/>
+        <TextView
+            android:id="@+id/next_departure"
+            style="@style/BaseStyle"
+            android:text="--:--  "
+            android:textSize="@dimen/smart_watch_2_text_size_small"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/BaseStyle"
+            android:text="@string/departure_after"
+            android:textSize="@dimen/smart_watch_2_text_size_small"/>
+        <TextView
+            android:id="@+id/remaining_time"
+            style="@style/BaseStyle"
+            android:text="--"
+            android:textSize="@dimen/smart_watch_2_text_size_large"/>
+        <TextView
+            android:id="@+id/minutes"
+            style="@style/BaseStyle"
+            android:text="@string/min"
+            android:textSize="@dimen/smart_watch_2_text_size_small"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Rozkład Jazdy</string>
+    <string name="action_settings">Ustawienia</string>
+    <string name="menu_bus_stop_button">Wyświetl przystanki</string>
+    <string name="menu_bus_line_button">Wyświetl linie</string>
+    <string name="settings">Ustawienia</string>
+    <string name="about">O aplikacji</string>
+    <string name="title_activity_bus_stop">Przystanki</string> <!-- BusStopActivity -->
+    <string name="title_activity_bus_line">Linie</string> <!-- BusLineActivity -->
+    <string name="title_activity_bus_stop_details">Linie na przystanku</string> <!--BusStopDetailsActivity -->
+    <string name="title_activity_lines">Linie</string> <!--LinesActivity -->
+    <string name="title_activity_show_stops">Czas przejazdu</string> <!--ShowStopsActivity -->
+
+    <string name="title_activity_timetable">Szczegóły</string>
+    <string name="pick_date">Zmień date</string>
+    <string name="show_stops">Wyświetl przystanki</string>
+    <string name="search_title">Szukaj</string>
+    <string name="search_hint">Szukaj...</string>
+    <string name="navigation_drawer_close"></string>
+    <string name="navigation_drawer_open"></string>
+    <string name="connection_problem">Prawdopodobnie masz kłopoty z połączeniem internetowym</string>
+    <string name="set_widget">Dodaj widget na SmartWatch</string>
+    <string name="refresh_api">Odśwież</string>
+    <string name="add_alarm">Dodaj alarm</string>
+    <string name="given_date_has_already_been">Podana data lub godzina już była. Nie ustawiono alarmu.</string>
+    <string name="set_alarm">Alarm został ustawiony.</string>
+    <string name="del_alarm">Alarm został usunięty.</string>
+    <string name="alarm_dialog_message">Usunąć ustawione wcześniej powiadomienie?</string>
+    <string name="watch_dialog_message">Usunąć ustawiony wcześniej widget?</string>
+    <string name="widget_not_valid_dialog_message">Ustawiony widget może być nie aktualny! Uaktualnić dla dnia dzisiajszego?</string>
+    <string name="alarm_canceled">Powiadomienie od nadchodzącym autobusie zostało anulowane</string>
+    <string name="smartwatch_widget_not_set">Widget SmartWatch nie został ustawiony</string>
+    <string name="smartwatch_widget_not_valid">Widget może zawierać godz odjazdów dla innego dnia!</string>
+    <string name="alarm_widget_not_set">Przypomnienie nie zostało ustawione</string>
+    <string name="send_message_for_all">Czy chcesz powiadomić wszystkich użytkowników tej aplikacji o kontroli biletów? Sprawdź czy linia i kierunek jazdy się zgadzają!</string>
+    <string name="notify_ticket_inspection">Powiadom innych o kontroli biletów</string>
+    <string name="notify_ticket_inspection_error">Musisz odczekać 5 min od ostatniego powiadomienia</string>
+    <string name="loading_data">Trwa pobieranie danych</string>
+    <string name="null_remember_before">Niewłaściwa wartość! Przywrócono poprzednią.</string>
+    <string name="last_busstop_not_set">Nie ustawiono przystanków</string>
+    <string name="stop_for_another_variant">Nie dotyczy</string>
+    <string name="register_to_gcm">Przejdź do ustawień aby włączyć GCM</string>
+    <string name="gcm_registration_completed">Rejestracja zakończona powodzeniem. Teraz możesz zobaczyć powiadomienia.</string>
+
+    <string name="pref_category_api">Ustawienia API</string>
+    <string name="pref_title_set_api">Strona udostępniająca API</string>
+    <string name="pref_category_alerts">Powiadomienia</string>
+    <string name="pref_title_set_alarm_min_before">Alarm</string>
+    <string name="pref_summary_set_alarm_min_before">Czas przed odjazdem</string>
+    <string name="pref_title_set_vibration">Wibracje</string>
+    <string name="pref_summary_set_vibration">Ustaw wibracje</string>
+    <string name="pref_title_set_ringtone">Dźwięk</string>
+    <string name="pref_summary_set_ringtone">Ustaw dźwięk</string>
+    <string name="pref_title_set_led">LED</string>
+    <string name="pref_summary_set_led">Ustaw diode LED</string>
+    <string name="pref_category_gcm">Ustawienia Google Cloud Messaging</string>
+    <string name="pref_title_set_enable_gcm">Zarejestruj w usłudze GCM</string>
+    <string name="pref_summary_set_enable_gcm">Rejestruje w usłudze powiadomień obsługiwanych przez Google Cloud Messaging</string>
+
+    <string name="pref_title_set_admin_notification">Powiadomienia od Administratora</string>
+    <string name="pref_summary_set_admin_notification">Pozwala na otrzymywanie powiadomień od Administratora systemu</string>
+    <string name="pref_title_set_user_notification">Powiadomienia o kontroli biletów</string>
+    <string name="pref_summary_set_user_notification">Pozwala na otrzymywanie powiadomień o kontrolach biletów od innych użytkowników</string>
+    <string name="yes">Tak</string>
+    <string name="no">Nie</string>
+    <string name="title_activity_about">AboutActivity</string>
+
+</resources>

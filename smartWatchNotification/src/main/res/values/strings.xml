@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="app_name">SmartWatch Informacje</string>
+    <!-- Title of preference activity -->
+    <string name="preference_activity_title">SmartWatch Informacje</string>
+    <!-- Configuration text shown in preferences -->
+    <string name="configuration_text">SmartWatch Informacje</string>
+    <!-- Extension name, shown in preferences -->
+    <string name="extension_name">Info</string>
+    <!-- Name of source, shown in preferences -->
+    <string name="source_name">Powiadomienia źródło</string>
+    <!-- Action Toasts, shown on accessory -->
+    <string name="action_event_1">Otwórz apk (tel)</string>
+    <string name="action_event_2">Anuluj Alarm</string>
+    <string name="action_event_3">Powrót</string>
+
+    <!-- Text that is read before the display name on accessories that supports text to speech -->
+    <string name="text_to_speech">Nowe Powiadomienie! </string>
+    <string name="preference_option_read_me">O aplikacji</string>
+    <string name="preference_key_read_me">preference_key_read_me</string> <!-- ??? -->
+    <string name="preference_option_read_me_txt">Aplikacja przeznaczona na SmartWatch.\n\nPozwala na odbieranie informacji od administratora, powiadomień o kontroli biletów od użytkowników aplikacji RozkladJazdy oraz przypomnień o zbliżającym się autobusie.</string>
+    <string name="preference_option_clear">Wyczyść wszystkie powiadomienia</string>
+    <string name="preference_option_clear_txt">"Wszystkie powiadomienia zostaną wyczyszczone! Kontynuować?"</string>
+    <string name="preference_key_clear">preference_key_clear</string>  <!-- ??? -->
+    <string name="clear_success">Wszystkie powiadomienia zostały wyczyszczone</string>
+    <string name="clear_failure">Nie udało się wyczyścić powiadomień</string>
+
+</resources>

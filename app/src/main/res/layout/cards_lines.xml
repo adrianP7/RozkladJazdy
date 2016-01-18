@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >>
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        card_view:cardBackgroundColor="@color/background_material_light"
+        card_view:cardCornerRadius="@dimen/cardCornerRadius"
+        card_view:cardElevation="@dimen/cardElevation">
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cardsColour">
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nazwa przystanku depracated"
+                android:textColor="#212121"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentLeft="false"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textViewBegin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Początek trasy"
+                android:layout_marginTop="5dp"
+                android:textColor="#212121"
+                android:layout_below="@+id/textViewName"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentLeft="false"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:id="@+id/textViewEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Koniec trasy"
+                android:layout_marginTop="5dp"
+                android:textColor="#212121"
+                android:layout_below="@+id/textViewBegin"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentLeft="false"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"/>
+            />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

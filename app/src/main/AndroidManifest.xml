@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pomykol.adrian.rozkladjazdy" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- GCM permissions -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.programmingtechniques.gcmdemo.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.programmingtechniques.gcmdemo.permission.C2D_MESSAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".rozlkadjazdy.activities.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".rozlkadjazdy.activities.BusStopDetailsActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_bus_stop_details"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".rozlkadjazdy.activities.TimetableActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_timetable"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".rozlkadjazdy.activities.ShowStopsActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_show_stops"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+
+        <meta-data
+            android:name="android.app.default_searchable"
+            android:value="com.apkgetter.SearchResultsActivity" />
+
+        <activity
+            android:name=".rozlkadjazdy.activities.BusStopActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_bus_stop"
+            android:theme="@style/AppTheme.NoActionBar" >
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".rozlkadjazdy.activities.LinesActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_lines"
+            android:theme="@style/AppTheme.NoActionBar" >
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <receiver
+            android:name=".rozlkadjazdy.gcm.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.programmingtechniques.gcmdemo" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".rozlkadjazdy.gcm.GcmIntentService" />
+
+        <receiver android:name=".rozlkadjazdy.ResultReceiver" >
+            <intent-filter>
+                <action android:name="com.pomykol.adrian.rozkladjazdy.ResultReceiver.SMARTWATCH" />
+                <action android:name="com.pomykol.adrian.rozkladjazdy.ResultReceiver.ALARM" />
+                <action android:name="com.pomykol.adrian.rozkladjazdy.ResultReceiver.CANCEL_NOTIFICATION" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".rozlkadjazdy.activities.SettingsActivity" >
+        </activity>
+        <activity
+            android:name=".rozlkadjazdy.activities.AboutActivity"
+            android:label="@string/title_activity_about"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+    </application>
+</manifest>

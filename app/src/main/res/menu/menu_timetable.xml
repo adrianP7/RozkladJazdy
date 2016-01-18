@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.pomykol.adrian.rozkladjazdy.rozlkadjazdy.activities.TimetableActivity">
+
+    <item
+        android:id="@+id/ticket_control"
+        android:icon="@drawable/ic_sms_failed_white_48dp"
+        app:showAsAction="always"
+        app:actionViewClass="ImageButton"
+        android:title="@string/notify_ticket_inspection" />
+    <item
+        android:id="@+id/set_widget"
+        android:icon="@drawable/ic_watch_white_48px"
+        app:showAsAction="always"
+        app:actionViewClass="ImageButton"
+        android:title="@string/set_widget" />
+    <item
+        android:id="@+id/add_alarm"
+        android:icon="@drawable/ic_add_alert_white_48dp"
+        app:showAsAction="always"
+        app:actionViewClass="ImageButton"
+        android:title="@string/add_alarm" />
+    <item
+        android:id="@+id/refresh_api"
+        android:icon="@drawable/ic_refresh_white_48dp"
+        app:showAsAction="always"
+        app:actionViewClass="ImageButton"
+        android:title="@string/refresh_api" />
+
+</menu>

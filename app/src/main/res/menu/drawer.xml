@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/busStops"
+        android:icon="@drawable/ic_layers_black_48dp"
+        android:title="@string/menu_bus_stop_button" />
+    <item
+        android:id="@+id/lines"
+        android:icon="@drawable/ic_directions_bus_black_48dp"
+        android:title="@string/menu_bus_line_button" />
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_settings_black_48dp"
+        android:title="@string/settings" />
+    <item
+        android:id="@+id/info"
+        android:icon="@drawable/ic_live_help_black_48dp"
+        android:title="@string/about" />
+
+</menu>
